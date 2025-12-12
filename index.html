@@ -3,273 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OTT Player - Privacy Policy & Termini di Servizio</title>
+  <title>OTT Player - Il tuo IPTV Player completo</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, sans-serif;
       line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
       background-color: #0f172a;
       color: #e5e7eb;
     }
-    h1, h2, h3 {
+    nav {
+      background-color: #020617;
+      border-bottom: 1px solid #1f2937;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
       color: #38bdf8;
     }
-    a {
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 20px;
+      background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #9ca3af;
+      margin-bottom: 2rem;
+    }
+    .features {
+      padding: 4rem 0;
+    }
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 3rem;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .feature-card {
+      background-color: #020617;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+    .feature-card h3 {
+      color: #38bdf8;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .feature-card p {
+      color: #9ca3af;
+    }
+    .cta-section {
+      text-align: center;
+      padding: 4rem 20px;
+      background-color: #020617;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+    }
+    .cta-section h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      background-color: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .btn:hover {
+      background-color: #0ea5e9;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: #38bdf8;
+      border: 2px solid #38bdf8;
+    }
+    .btn-secondary:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #020617;
+      color: #9ca3af;
+      margin-top: 4rem;
+    }
+    footer a {
       color: #38bdf8;
       text-decoration: none;
     }
-    a:hover {
+    footer a:hover {
       text-decoration: underline;
     }
-    .section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background-color: #020617;
-      border-radius: 12px;
-      border: 1px solid #1f2937;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #1f2937;
-      margin: 40px 0;
-    }
-    small {
-      color: #9ca3af;
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      nav ul {
+        gap: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>OTT Player</h1>
-  <p><small>Ultimo aggiornamento: 26/11/2025</small></p>
+  <nav>
+    <div class="container">
+      <div class="logo">OTT Player</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">Come funziona</a></li>
+        <li><a href="support.html">Supporto</a></li>
+        <li><a href="privacy.html">Privacy & Termini</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- PRIVACY POLICY -->
-  <div class="section" id="privacy-policy">
-    <h2>Informativa sulla Privacy</h2>
+  <section class="hero">
+    <div class="container">
+      <h1>OTT Player</h1>
+      <p>Il player IPTV completo per le tue playlist</p>
+    </div>
+  </section>
 
-    <p>
-      La presente Informativa sulla Privacy descrive come l’applicazione
-      <strong>OTT Player</strong> gestisce le informazioni degli utenti.
-      L’app è progettata per garantire la massima tutela della privacy e
-      <strong>non raccoglie alcun dato personale</strong>.
-    </p>
+  <section class="features">
+    <div class="container">
+      <h2>Caratteristiche Principali</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Zero Pubblicità</h3>
+          <p>Nessuna pubblicità invasiva. Goditi i tuoi contenuti senza interruzioni.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Privacy Totale</h3>
+          <p>Non raccogliamo alcun dato personale. Tutto rimane sul tuo dispositivo.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Playlist Multiple</h3>
+          <p>Supporto per file M3U, TXT, URL, MAC Portal e playlist custom con DRM ClearKey.</p>
+        </div>
+        <div class="feature-card">
+          <h3>EPG Integrato</h3>
+          <p>Visualizza la guida programmi dei tuoi canali preferiti.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Facile da Usare</h3>
+          <p>Interfaccia intuitiva e semplice. Carica la tua playlist e inizia subito.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Sempre Aggiornato</h3>
+          <p>Aggiornamenti regolari con nuove funzionalità e miglioramenti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h3>1. Raccolta dei dati</h3>
-    <p>
-      <strong>OTT Player non raccoglie, non archivia e non condivide alcun dato personale o sensibile degli utenti.</strong><br />
-      L’app:
-    </p>
-    <ul>
-      <li>non richiede registrazione o creazione di account;</li>
-      <li>non utilizza sistemi di analytics di terze parti;</li>
-      <li>non utilizza database esterni per profilare l’utente;</li>
-      <li>non effettua alcun tipo di tracciamento o monitoraggio.</li>
-    </ul>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Hai bisogno di aiuto?</h2>
+      <p style="color: #9ca3af; margin-bottom: 2rem;">
+        Scopri come funziona l'app o contatta il nostro supporto
+      </p>
+      <a href="how-it-works.html" class="btn">Come funziona</a>
+      <a href="support.html" class="btn btn-secondary">Supporto</a>
+    </div>
+  </section>
 
-    <h3>2. Pubblicità</h3>
-    <p>
-      L’app <strong>non contiene pubblicità</strong>, non utilizza reti di advertising e
-      non effettua profilazione a fini commerciali.
-    </p>
-
-    <h3>3. Contenuti dell’utente</h3>
-    <p>
-      <strong>OTT Player non fornisce contenuti IPTV.</strong> L’app non ospita né
-      distribuisce contenuti multimediali. Tutti i contenuti visualizzati
-      all’interno dell’app sono forniti esclusivamente dall’utente tramite:
-    </p>
-    <ul>
-      <li>playlist locali (file M3U o TXT con struttura #EXTM3U);</li>
-      <li>playlist caricate tramite URL;</li>
-      <li>liste IPTV standard;</li>
-      <li>liste MAC Portal / portali compatibili;</li>
-      <li>EPG forniti dal proprio provider;</li>
-      <li>eventuali playlist custom, anche con DRM ClearKey.</li>
-    </ul>
-    <p>
-      L’app non verifica, non modifica e non memorizza permanentemente tali contenuti su server remoti.
-      L’elaborazione avviene localmente sul dispositivo dell’utente.
-    </p>
-
-    <h3>4. Responsabilità dei contenuti</h3>
-    <p>
-      L’utente è l’unico responsabile dei contenuti caricati e della loro provenienza.
-      <strong>OTT Player non incoraggia, non facilita e non supporta</strong> l’accesso
-      a contenuti illegali, non autorizzati o protetti da copyright senza i necessari diritti.
-    </p>
-
-    <h3>5. Contenuti sensibili</h3>
-    <p>
-      L’app non propone né integra:
-    </p>
-    <ul>
-      <li>contenuti sessuali o pornografici;</li>
-      <li>materiale sessista o discriminatorio;</li>
-      <li>contenuti violenti, d’odio o illegali;</li>
-      <li>materiale osceno o inappropriato.</li>
-    </ul>
-    <p>
-      Eventuali contenuti visualizzati tramite playlist fornite dall’utente sono di
-      esclusiva responsabilità dell’utente stesso e/o del relativo provider.
-    </p>
-
-    <h3>6. Sicurezza</h3>
-    <p>
-      Poiché l’app <strong>non raccoglie né archivia dati personali</strong>, non è prevista
-      alcuna trasmissione di informazioni verso server esterni a fini di profilazione.
-      Le playlist vengono elaborate localmente sul dispositivo, nel rispetto delle
-      impostazioni di sicurezza del sistema operativo.
-    </p>
-
-    <h3>7. Diritti degli utenti</h3>
-    <p>
-      Non essendoci alcuna raccolta di dati personali, non è necessario richiedere
-      cancellazione, esportazione o rettifica dei dati. L’utente può in qualsiasi momento
-      disinstallare l’app dal proprio dispositivo per interromperne l’utilizzo.
-    </p>
-
-    <h3>8. Minori</h3>
-    <p>
-      OTT Player è pensata per un uso generico e non raccoglie dati da minori.
-      Tuttavia, l’utilizzo da parte di minori dovrebbe avvenire sotto la supervisione
-      di un adulto, poiché i contenuti dipendono dalle playlist fornite dall’utente
-      o dal relativo provider.
-    </p>
-
-    <h3>9. Modifiche alla presente Informativa</h3>
-    <p>
-      La presente Informativa sulla Privacy può essere aggiornata nel tempo.
-      Eventuali modifiche saranno rese disponibili su questa pagina. Si consiglia
-      di consultare periodicamente questo documento.
-    </p>
-
-    <h3>10. Contatti</h3>
-    <p>
-      Per domande o segnalazioni relative alla privacy, è possibile contattare:
-      <br />
-      <strong>Email:</strong> <a href="mailto:scarlataemanuele@gmail.com">scarlataemanuele@gmail.com</a>
-    </p>
-  </div>
-
-  <hr />
-
-  <!-- TERMINI DI SERVIZIO -->
-  <div class="section" id="termini-di-servizio">
-    <h2>Termini di Servizio</h2>
-
-    <p>
-      I presenti Termini di Servizio regolano l’utilizzo dell’applicazione
-      <strong>OTT Player</strong>. Installando o utilizzando l’app, l’utente accetta di essere
-      vincolato dai seguenti termini. Se non si accettano tali termini, si invita
-      a non utilizzare l’applicazione.
-    </p>
-
-    <h3>1. Oggetto dell’applicazione</h3>
-    <p>
-      OTT Player è un <strong>player IPTV</strong> che consente la riproduzione di contenuti
-      multimediali tramite playlist fornite dall’utente (ad esempio file M3U o TXT con
-      struttura #EXTM3U, playlist tramite URL, liste MAC Portal, EPG e playlist custom).
-      L’app:
-    </p>
-    <ul>
-      <li>non fornisce alcun contenuto audiovisivo preinstallato;</li>
-      <li>non vende, distribuisce o promuove liste IPTV;</li>
-      <li>non mette a disposizione canali TV, film, serie o altri contenuti;</li>
-      <li>funziona esclusivamente come lettore/cliente per playlist legittimamente ottenute dall’utente.</li>
-    </ul>
-
-    <h3>2. Utilizzo consentito</h3>
-    <p>
-      L’utente si impegna a utilizzare l’app nel rispetto delle leggi vigenti e dei diritti
-      di terzi, in particolare per quanto riguarda:
-    </p>
-    <ul>
-      <li>diritti d’autore e copyright;</li>
-      <li>marchi registrati;</li>
-      <li>diritti di immagine e di privacy;</li>
-      <li>qualsiasi normativa nazionale e internazionale applicabile ai contenuti audiovisivi.</li>
-    </ul>
-    <p>
-      È espressamente vietato utilizzare OTT Player per accedere, riprodurre o distribuire
-      contenuti:
-    </p>
-    <ul>
-      <li>illegali o non autorizzati;</li>
-      <li>che violino diritti di copyright o licenze;</li>
-      <li>che contengano materiale pornografico, sessista, d’odio, discriminatorio o violento;</li>
-      <li>che violino le leggi del Paese in cui l’utente si trova.</li>
-    </ul>
-
-    <h3>3. Contenuti di terze parti</h3>
-    <p>
-      Tutti i contenuti riprodotti tramite l’app provengono da playlist e sorgenti
-      fornite dall’utente o dal suo provider. L’autore dell’app:
-    </p>
-    <ul>
-      <li>non controlla tali contenuti;</li>
-      <li>non è responsabile per la loro disponibilità, legalità, qualità o accuratezza;</li>
-      <li>non fornisce alcuna garanzia sui flussi, sui server o sui servizi di terze parti.</li>
-    </ul>
-
-    <h3>4. Assenza di garanzie</h3>
-    <p>
-      OTT Player è fornita “così com’è” (<em>as is</em>) e “come disponibile”
-      (<em>as available</em>), senza garanzie di alcun tipo, espresse o implicite,
-      comprese, a titolo esemplificativo:
-    </p>
-    <ul>
-      <li>garanzie di funzionamento ininterrotto o privo di errori;</li>
-      <li>compatibilità con qualsiasi dispositivo o sistema operativo;</li>
-      <li>idoneità per uno scopo particolare;</li>
-      <li>assenza di bug o malfunzionamenti.</li>
-    </ul>
-
-    <h3>5. Limitazione di responsabilità</h3>
-    <p>
-      Nei limiti massimi consentiti dalla legge applicabile, l’autore di OTT Player
-      non potrà essere ritenuto responsabile per:
-    </p>
-    <ul>
-      <li>danni diretti, indiretti, incidentali o consequenziali derivanti dall’uso o dall’impossibilità d’uso dell’app;</li>
-      <li>perdita di dati, interruzione del servizio, malfunzionamenti del dispositivo;</li>
-      <li>utilizzo dell’app per accedere a contenuti illegali, non autorizzati o in violazione di diritti di terzi.</li>
-    </ul>
-    <p>
-      L’utente utilizza l’applicazione sotto la propria esclusiva responsabilità.
-    </p>
-
-    <h3>6. Modifiche all’applicazione</h3>
-    <p>
-      Le funzionalità di OTT Player possono essere aggiornate, modificate o rimosse
-      in qualsiasi momento, senza obbligo di preavviso. Non vi è alcun obbligo di
-      mantenere o supportare determinate funzionalità nel tempo.
-    </p>
-
-    <h3>7. Modifiche ai Termini di Servizio</h3>
-    <p>
-      I presenti Termini di Servizio possono essere aggiornati nel tempo.
-      Eventuali modifiche saranno pubblicate su questa pagina. L’uso continuato
-      dell’app dopo tali modifiche costituirà accettazione dei nuovi termini.
-    </p>
-
-    <h3>8. Legge applicabile</h3>
-    <p>
-      I presenti Termini sono regolati dalle leggi del Paese in cui risiede
-      l’autore dell’app, salvo diversa disposizione inderogabile.
-      Eventuali controversie saranno sottoposte alla giurisdizione competente
-      secondo la normativa vigente.
-    </p>
-
-    <h3>9. Contatti</h3>
-    <p>
-      Per informazioni relative a questi Termini di Servizio, è possibile contattare:
-      <br />
-      <strong>Email:</strong> <a href="mailto:scarlataemanuele@gmail.com">scarlataemanuele@gmail.com</a>
-    </p>
-  </div>
-
+  <footer>
+    <div class="container">
+      <p>OTT Player - Il tuo IPTV Player</p>
+      <p>
+        <a href="privacy.html">Privacy Policy & Termini di Servizio</a> |
+        <a href="mailto:scarlataemanuele@gmail.com">Contatti</a>
+      </p>
+      <p><small>Ultimo aggiornamento: 12/12/2025</small></p>
+    </div>
+  </footer>
 </body>
 </html>
